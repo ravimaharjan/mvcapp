@@ -14,8 +14,8 @@ namespace TestApp.Controllers
             emp.FirstName = "Ravi";
             emp.LastName = "Maharjan";
             emp.Salary = 20000;
-            ViewData["Employee"] = emp;
-            return View("EmployeeView");
+            
+            return View("EmployeeView", emp);
             
         }
     }
